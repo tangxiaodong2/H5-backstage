@@ -1,6 +1,6 @@
 app.controller('loginCtrl', ["$scope","$state", function($scope,$state){
 	
-	$scope.goHome =function (){
+	$scope.loading =function (){
 		$state.go('home');
 	}
 }])

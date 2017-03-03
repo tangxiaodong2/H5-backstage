@@ -1,0 +1,168 @@
+html,body,.wrap{
+	/*width:6.4rem;*/
+	width: 100%;
+	height:100%; 
+	font-family: Microsoft YaHei;
+	/*margin:0;*/
+}
+@media screen and (max-width:321px){
+    .m-navlist{font-size:15px}
+}
+
+@media screen and (min-width:321px) and (max-width:400px){
+    .m-navlist{font-size:16px}
+}
+
+@media screen and (min-width:400px){
+    .m-navlist{font-size:18px}
+}
+/*************登录页面***************/
+.loginView{
+	width: 100%;
+	height:100%;
+	background: url(../images/bg1.png);
+	background-size: cover;
+}
+.logo{
+	text-align: center;
+	vertical-align: middle;
+	height:4rem;
+	position: relative;
+}
+.logo img{
+	position: absolute;
+	top:50%;
+	left:50%;
+	margin-left: -0.75rem;
+	margin-top: -0.25rem;
+	width:1.5rem;
+	height:1.54rem;
+}
+.loginInput{
+	color:#26bc57;
+}
+.loginInput i {
+	color:#26bc57;
+	font-size: 24px;
+	vertical-align: middle;
+}
+.rememberpwd{
+	vertical-align: middle;
+	height: 0.6rem;
+	padding: 0 15px;
+}
+.rememberpwd-txt{
+	float: right;
+	height: 0.5rem;
+	line-height: .5rem;
+	padding-right: 10px;
+}
+.rememberpwd .toggle{
+	float: right;
+}
+.loginBtn{
+	border-radius: 30px;
+    border: none;
+    font-family: "微软雅黑";
+}
+/*************首页**************/
+.userInfo{
+	height:4rem;
+	background: url(../images/bg2.png);
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+}
+.userInfo-row1{
+	height: .9rem;
+	padding-top: 0.3rem;
+}
+.userInfo-row1 .right{
+	float: right;
+	width: 2rem;
+	height: 0.6rem;
+	line-height: 0.6rem;
+	background: rgba(255,255,255,0.5);
+	border-radius: 0.3rem 0 0 0.3rem;
+	text-align: center;
+}
+.userInfo-row1 .right i{
+	padding: 0 10px;
+	color: #207d3f;
+	font-size: 22px;
+}
+.userInfo-row2{
+	-webkit-flex: 1;
+	-moz-flex: 1;
+	-ms-flex: 1;
+	-o-flex: 1;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.userName{
+	width: 1.8rem;
+	height: 1.8rem;
+	border-radius: 50%;
+	background: rgba(255,255,255,0.5);
+	line-height: 1.8rem;
+	text-align: center;
+	color:#26bc57;
+	font-size: 30px;
+}
+.fullName{
+	padding-top: 15px;
+	color: #429a5f;
+	font-size: 16px;
+}
+.business{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.business .busines-item{
+	width: 50%;
+	height: 2.5rem;
+	border:1px solid #e6e6e6;
+	box-sizing: border-box;
+	text-align: center;
+	padding-top: 0.6rem;
+}
+.business .busines-item i{
+	color: #55bf69;
+	font-size: 45px;
+}
+.business .busines-item p{
+	color: #333333;
+	font-size: 16px;
+	padding-top: 0.1rem;
+}
+.busines-item.limitedAuthority i ,.busines-item.limitedAuthority p {
+	color: #e6e6e6;
+}
+/******************修改密码*******************/
+.navBar{
+	background: #f8f8f8;
+	border-bottom: 1px solid #eeeeee;
+}
+.content .tip{
+	padding-top:1rem; 
+	padding-left: .3rem;
+	color: #aaaaaa;
+}
+.list.list-pwd{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.item.item-pwd{
+	border-left: none;
+	border-right: none;
+}
+.item.item-pwd:first-child{
+	border-top: none;
+}

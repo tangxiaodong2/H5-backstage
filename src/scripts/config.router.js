@@ -15,6 +15,34 @@ app.config(function ($stateProvider,$urlRouterProvider) {
 		url:"/changePwd",
 		templateUrl:"src/scripts/templates/changePwd.html",
 		controller:"changePwdCtrl"
+	}).state("procurement",{
+		url:"/procurement",
+		templateUrl:"src/scripts/templates/procurementPage.html",
+		controller:"procurementCtrl"
+	}).state("addProcurement",{
+		url:"/addProcurement",
+		templateUrl:"src/scripts/templates/addProcurement.html",
+		controller:"addProcurementCtrl"
+	}).state("sale",{
+		url:"/sale",
+		templateUrl:"src/scripts/templates/salePage.html",
+		controller:"saleCtrl"
+	}).state("inventory",{
+		url:"/inventory",
+		templateUrl:"src/scripts/templates/inventoryPage.html",
+		controller:"inventoryCtrl"
+	}).state("price",{
+		url:"/price",
+		templateUrl:"src/scripts/templates/pricePage.html",
+		controller:"priceCtrl"
+	}).state("procurementDetail",{
+		url:"/procurementDetail",
+		templateUrl:"src/scripts/templates/procurementDetail.html",
+		controller:"procurementDetailCtrl"
+	}).state("saleDetail",{
+		url:"/saleDetail",
+		templateUrl:"src/scripts/templates/saleDetail.html",
+		controller:"saleDetailCtrl"
 	});
- 	$urlRouterProvider.otherwise("/home")
+ 	$urlRouterProvider.otherwise("/home");
 });

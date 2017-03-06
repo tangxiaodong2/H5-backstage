@@ -1,0 +1,58 @@
+<!-- 添加采购记录 -->
+<ion-view view-title="采购药材">
+<ion-nav-bar>
+		<ion-nav-back-button class="button-clear">
+			<i class="icon ion-ios-arrow-back"></i> Back
+		</ion-nav-back-button>
+</ion-nav-bar>
+<ion-content>
+  <ion-list>
+	  <ion-item>
+	    <label class="item-input item-select">
+		    <div class="input-label goods-title">
+		      商品
+		    </div>
+		    <select class="selectGoods">	      
+		     <option selected>请选择</option>
+		      <option>三七阿斯顿发阿斯顿发生</option>
+		      <option>当归</option>
+		      <option>菊花</option>
+		      <option>当归</option>
+		      <option>菊花</option>
+		    </select>
+		  </label>
+	  </ion-item>
+	  <ion-item>
+		  <div class="item-input item-select">
+		    <div class="input-label goods-title">
+		      采购单价
+		    </div>
+		    <input type="text" name=""> 元 | &nbsp;
+		    <select class="selectGoods">	      
+		      <option selected>请选择</option>
+		      <option>三七撒打开金凤凰克里斯多夫</option>
+		      <option>当归</option>
+		      <option>菊花</option>
+		      <option>当归</option>
+		      <option>菊花</option>
+		    </select>
+		  </div>
+	  </ion-item>
+	  <ion-item>
+	     <label class="item-input item-select">
+		    <div class="input-label goods-title">
+		     采购日期
+		    </div>
+		   <input type="date" name="" ng-model="now">
+		  </label>
+	  </ion-item>
+	  <ion-item  class="ionItem1" ngf-select ng-model="data.file" name="file" ngf-pattern="'image/*'" ngf-multiple="false">  
+		     <label class="item_title goods-title">商品图片</label>  
+		     <img src="" class="headerImage"  ngf-src="data.file || data.defaultImage">  
+	  </ion-item>
+   </ion-list>
+	<div class="padding">
+	    <button class="button button-block button-balanced loginBtn" ng-click="upload()">提交</button>
+	 </div>
+	</ion-content>
+</ion-view> 

@@ -60,10 +60,12 @@ html,body,.wrap{
 .rememberpwd .toggle{
 	float: right;
 }
-.loginBtn{
+.button.button-balanced.loginBtn{
 	border-radius: 30px;
     border: none;
     font-family: "微软雅黑";
+    font-size: 20px;
+    background: #64b07d;
 }
 /*************首页**************/
 .userInfo{
@@ -146,9 +148,14 @@ html,body,.wrap{
 	color: #e6e6e6;
 }
 /******************修改密码*******************/
-.navBar{
+.bar.bar-header.disable-user-behavior,.navBar{
 	background: #f8f8f8;
 	border-bottom: 1px solid #eeeeee;
+	font-size: 24px;
+	height:48px;
+}
+.bar.bar-header.disable-user-behavior .title,.navBar .title{
+	font-size: 22px;
 }
 .content .tip{
 	padding-top:1rem; 
@@ -165,4 +172,105 @@ html,body,.wrap{
 }
 .item.item-pwd:first-child{
 	border-top: none;
+}
+.icon.addBtn{
+	font-size: 36px;
+	color:#4aa167;
+}
+/********************我的采购*************************/
+.item-name{
+	color: #4aa167;
+	font-size: 16px;
+	padding-right: 10px;
+}
+.item-size{
+	color: #333;
+	font-size: 16px;
+}
+.item-price{
+	float: right;
+	color: #f15f5f;
+	font-size: 16px;
+}
+.first-P{
+	padding-bottom: 6px;
+}
+.item-area,.item-date{
+	color: #999999;
+	font-size: 14px;
+}
+.item-date{
+	float: right;
+}
+.item-complex .item-content{
+	padding:16px;
+}
+/*********************我的销售***************************/
+.item-sale{
+	float: right;
+	color: #999999;
+	font-size: 14px;
+	padding-right: .4rem;
+}
+/*******************当前库存(行情价格)*********************/
+.item-save{
+	float: right;
+	color: #999999;
+	font-size: 14px;
+}
+.save-p{
+	margin-right: 40px;
+}
+.save-item{
+	position: relative;
+}
+.editor{
+	position: absolute;
+	right: 10px;
+	top:50%;
+	color:#64b07d;
+	font-size: 36px;
+	margin-top: -18px;
+}
+/******************添加采购************************/
+.goods-title{
+	color:#aaaaaa;
+	font-size: 15px;
+	display: inline-block;
+	width: 80px;
+	text-align: right;
+	padding-right: 20px;
+	vertical-align: top;
+}
+.item-select .selectGoods{
+	border:none;
+	float: right;
+	padding: 0;
+	padding-right: .5rem;
+	font-size: 14px;
+	font-family: Microsoft YaHei;
+	position: static;
+	width: 100%;
+    direction: inherit;
+}
+.item-input {
+	padding: 0;
+}
+.headerImage{
+	width:2rem;
+	height: 2rem;
+}
+/**********************采购详情**********************/
+.text{
+	color: #333333;
+}
+/*******************销售详情**********************/
+.info{
+	height:.6rem;
+	line-height: .6rem;
+	background: #eee;
+	color: #333;
+	margin: 0;
+	padding-left: 10px;
+	font-size: 16px;
 }

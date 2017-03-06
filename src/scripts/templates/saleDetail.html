@@ -1,0 +1,81 @@
+<!-- 销售详情 -->
+<ion-view view-title="销售详情">
+<ion-nav-bar>
+	<ion-nav-back-button class="button-clear">
+		<i class="icon ion-ios-arrow-back"></i> Back
+	</ion-nav-back-button>
+</ion-nav-bar>
+<ion-content>
+  <p class="info">订单信息</p>
+  <ion-list>
+	  <ion-item>
+	    <p>
+	    	<span class="goods-title">品种</span>
+	    	<span class="text">{{good.name}}</span>
+	    </p>
+	  </ion-item>
+	  <ion-item>
+		<p>
+	    	<span class="goods-title">规格</span>
+	    	<span class="text">{{good.size}}</span>
+	    </p>
+	  </ion-item>
+	  <ion-item>
+		<p>
+	    	<span class="goods-title">产地</span>
+	    	<span class="text">{{good.area}}</span>
+	    </p>
+	  </ion-item>
+	 
+	 
+	  <ion-item>
+		<p>
+	    	<span class="goods-title">含税单价</span>
+	    	<span class="text">{{good.price}}</span>
+	    </p>
+	  </ion-item>
+	   <ion-item>
+	    <p>
+	    	<span class="goods-title">销量</span>
+	    	<span class="text">{{good.count}}</span>
+	    </p>
+	  </ion-item>
+	  <ion-item>
+		<p>
+	    	<span class="goods-title">优惠金额</span>
+	    	<span class="text">{{good.off}}</span>
+	    </p>
+	  </ion-item>
+	   <ion-item>
+	    <p>
+	    	<span class="goods-title">销售日期</span>
+	    	<span class="text">{{good.date}}</span>
+	    </p>
+	  </ion-item>
+   </ion-list>
+   <p class="info">买家信息</p>
+     <ion-list>
+	  <ion-item>
+	    <p>
+	    	<span class="goods-title">联系人</span>
+	    	<span class="text">{{good.person}}</span>
+	    </p>
+	  </ion-item>
+	  <ion-item>
+		<p>
+	    	<span class="goods-title">手机</span>
+	    	<span class="text">{{good.phone}}</span>
+	    </p>
+	  </ion-item>
+	  <ion-item>
+		<p>
+	    	<span class="goods-title">买家单位</span>
+	    	<span class="text">{{good.company}}</span>
+	    </p>
+	  </ion-item>
+   </ion-list>
+	<div class="padding">
+	    <button class="button button-block button-balanced loginBtn" ng-click="">删除</button>
+	 </div>
+	</ion-content>
+</ion-view> 

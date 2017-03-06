@@ -1,0 +1,45 @@
+<!-- 采购详情 -->
+<ion-view view-title="采购详情">
+<ion-nav-bar>
+	<ion-nav-back-button class="button-clear">
+		<i class="icon ion-ios-arrow-back"></i> Back
+	</ion-nav-back-button>
+</ion-nav-bar>
+<ion-content>
+  <ion-list>
+	  <ion-item>
+	    <p>
+	    	<span class="goods-title">品种</span>
+	    	<span class="text">{{good.name}}</span>
+	    </p>
+	  </ion-item>
+	  <ion-item>
+		<p>
+	    	<span class="goods-title">规格</span>
+	    	<span class="text">{{good.size}}</span>
+	    </p>
+	  </ion-item>
+	  <ion-item>
+		<p>
+	    	<span class="goods-title">产地</span>
+	    	<span class="text">{{good.area}}</span>
+	    </p>
+	  </ion-item>
+	  <ion-item>
+	    <p>
+	    	<span class="goods-title">采购日期</span>
+	    	<span class="text">{{good.date}}</span>
+	    </p>
+	  </ion-item>
+	  <ion-item>
+	    <p>
+	    	<span class="goods-title">商品图片</span>
+	    	<span class="text">{{good.imgUrl}}</span>
+	    </p>
+	  </ion-item>
+   </ion-list>
+	<div class="padding">
+	    <button class="button button-block button-balanced loginBtn" ng-click="">删除</button>
+	 </div>
+	</ion-content>
+</ion-view> 

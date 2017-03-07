@@ -1,9 +1,9 @@
 <!-- 采购详情 -->
 <ion-view view-title="采购详情">
 <ion-nav-bar>
-	<ion-nav-back-button class="button-clear">
-		<i class="icon ion-ios-arrow-back"></i> Back
-	</ion-nav-back-button>
+	<ion-nav-buttons class="button-clear" side="left" >
+		<i class="icon ion-ios-arrow-back backBtn"  ui-sref="procurement"></i>
+	</ion-nav-buttons >
 </ion-nav-bar>
 <ion-content>
   <ion-list>
@@ -34,12 +34,16 @@
 	  <ion-item>
 	    <p>
 	    	<span class="goods-title">商品图片</span>
-	    	<span class="text">{{good.imgUrl}}</span>
+	    	<img class="headerImage" ng-src="{{good.imgUrl}}" ng-click="showBig('{{good.imgUrl}}')">
 	    </p>
 	  </ion-item>
    </ion-list>
 	<div class="padding">
-	    <button class="button button-block button-balanced loginBtn" ng-click="">删除</button>
-	 </div>
+	    <button class="button button-block button-balanced loginBtn" ui-sref="delProcurement">删除</button>
+	</div>
 	</ion-content>
+	<!-- 点击查看图片放大 -->
+	<div class="bigImg" ng-if="show" ng-click="hideBig()">
+	    <img ng-src={{url}}>
+	</div>
 </ion-view> 

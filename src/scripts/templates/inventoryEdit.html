@@ -1,0 +1,65 @@
+<!-- 采购详情 -->
+<ion-view view-title="存货更新">
+<ion-nav-bar>
+	<ion-nav-buttons class="button-clear" side="left" >
+			<i class="icon ion-ios-arrow-back backBtn"  ui-sref="inventory"></i>
+	</ion-nav-buttons >
+</ion-nav-bar>
+<ion-content>
+  <ion-list>
+	  <ion-item>
+	    <p>
+	    	<span class="goods-title">品种</span>
+	    	<span class="text">{{good.name}}</span>
+	    </p>
+	  </ion-item>
+	  <ion-item>
+		<p>
+	    	<span class="goods-title">规格</span>
+	    	<span class="text">{{good.size}}</span>
+	    </p>
+	  </ion-item>
+	  <ion-item>
+		<p>
+	    	<span class="goods-title">产地</span>
+	    	<span class="text">{{good.area}}</span>
+	    </p>
+	  </ion-item>
+	  <ion-item>
+	    <div class="item-input item-select">
+		    <div class="input-label goods-title">
+		      成本价格
+		    </div>
+		    <input type="text" name=""> 元 |&nbsp;
+		    <select class="selectGoods">	      
+		      <option selected>吨</option>
+		      <option>三七撒打开金凤凰克里斯多夫</option>
+		      <option>吨</option>
+		      <option>菊花</option>
+		      <option>当归</option>
+		      <option>菊花</option>
+		    </select>
+		  </div>
+	  </ion-item>
+	  <ion-item>
+	     <div class="item-input item-select">
+		    <div class="input-label goods-title">
+		      当前库存
+		    </div>
+		    <input type="text" name="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	   
+		    <select class="selectGoods">      
+		      <option selected>吨</option>
+		      <option>三七撒打开金凤凰克里斯多夫</option>
+		      <option>吨</option>
+		      <option>菊花</option>
+		      <option>当归</option>
+		      <option>菊花</option>
+		    </select>
+		  </div>
+	  </ion-item>
+   </ion-list>
+	<div class="padding">
+	    <button class="button button-block button-balanced loginBtn" ng-click="">提交</button>
+	</div>
+	</ion-content>
+</ion-view> 

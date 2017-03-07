@@ -21,7 +21,7 @@ app.controller('addProcurementCtrl', ['$scope','Upload',function($scope,Upload){
                 //服务端接收  
                 url: 'upload/url',  
                 //上传的同时带的文件和参数  
-                // data: { file: file, 'username': $scope.username }  
+                data: { file: file, 'username': $scope.username }  
             }).then(function(resp) {  
                 console.log('Success ' + resp.config.data.file.name + 'uploaded. Response: ' + resp.data);  
             }, function(resp) {  

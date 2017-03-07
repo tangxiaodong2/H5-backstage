@@ -68,5 +68,5 @@ app.controller('inventoryCtrl', ['$scope', function($scope){
 				"date":"2017/03/06"
 			}
 		]
-	}
+	};
 }])

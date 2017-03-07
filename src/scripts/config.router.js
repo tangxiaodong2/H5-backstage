@@ -43,6 +43,26 @@ app.config(function ($stateProvider,$urlRouterProvider) {
 		url:"/saleDetail",
 		templateUrl:"src/scripts/templates/saleDetail.html",
 		controller:"saleDetailCtrl"
+	}).state("inventoryEdit",{
+		url:"/inventoryEdit",
+		templateUrl:"src/scripts/templates/inventoryEdit.html",
+		controller:"inventoryEditCtrl"
+	}).state("priceEdit",{
+		url:"/priceEdit",
+		templateUrl:"src/scripts/templates/priceEdit.html",
+		controller:"priceEditCtrl"
+	}).state("addSale",{
+		url:"/addSale",
+		templateUrl:"src/scripts/templates/addSale.html",
+		controller:"addSaleCtrl"
+	}).state("delProcurement",{
+		url:"/delProcurement",
+		templateUrl:"src/scripts/templates/delProcurement.html",
+		controller:"delProcurementCtrl"
+	}).state("delSale",{
+		url:"/delSale",
+		templateUrl:"src/scripts/templates/delSale.html",
+		controller:"delSaleCtrl"
 	});
  	$urlRouterProvider.otherwise("/home");
 });

@@ -1,9 +1,9 @@
 <!-- 销售详情 -->
 <ion-view view-title="销售详情">
 <ion-nav-bar>
-	<ion-nav-back-button class="button-clear">
-		<i class="icon ion-ios-arrow-back"></i> Back
-	</ion-nav-back-button>
+	<ion-nav-buttons class="button-clear" side="left" >
+		<i class="icon ion-ios-arrow-back backBtn"  ui-sref="sale"></i>
+	</ion-nav-buttons >
 </ion-nav-bar>
 <ion-content>
   <p class="info">订单信息</p>
@@ -75,7 +75,7 @@
 	  </ion-item>
    </ion-list>
 	<div class="padding">
-	    <button class="button button-block button-balanced loginBtn" ng-click="">删除</button>
+	    <button class="button button-block button-balanced loginBtn" ui-sref="delSale">删除</button>
 	 </div>
 	</ion-content>
 </ion-view> 

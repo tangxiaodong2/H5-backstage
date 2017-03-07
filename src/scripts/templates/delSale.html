@@ -1,0 +1,35 @@
+<!-- 删除销售记录 -->
+<ion-view view-title="删除销售记录">
+	<ion-nav-bar>
+		<ion-nav-buttons class="button-clear" side="left" >
+			<i class="icon ion-ios-arrow-back backBtn"  ui-sref="saleDetail"></i>
+		</ion-nav-buttons >
+	</ion-nav-bar>
+    <ion-content>
+      <ion-list>
+		  <ion-item>
+		     <p class="first-P">
+		    	<span class="item-name">{{item.name}}</span>
+		    	<span class="item-size">{{item.size}}</span>
+		    	<span class="item-price">{{item.price}}</span>
+		    </p>
+		    <p>
+		    	<span class="item-area">产地 : {{item.area}}</span>
+		    	<span class="item-date">{{item.date}}</span>
+		    	<span class="item-sale">销 : {{item.sale}}</span>
+		    </p>
+		  </ion-item>
+	  </ion-list>
+	  <p class="cut-off"></p>
+	  <div class="del-txt">
+	  	<p class="del-title">
+	  		请填写删除原因
+	  	</p>
+	  	<textarea class="del-container" placeholder=" 可输入200个字"></textarea>
+	  </div>
+	  <div class="btnBox delBtns">
+	  	<button class="button button-stable" ng-click="cancelDel()">取消</button>
+	    <button class="button button-balanced" ng-click="doDel()">删除</button>
+	  </div>
+    </ion-content>
+</ion-view>

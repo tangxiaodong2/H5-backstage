@@ -5,7 +5,7 @@
 				<div class="userInfo-row1">
 					<div class="right">
 						<i class="icon ion-locked" ui-sref="changePwd"></i>
-						<i class="icon ion-power"></i>
+						<i class="icon ion-power" ng-click="exit()"></i>
 					</div>
 				</div>
 				<div class="userInfo-row2">
@@ -33,6 +33,14 @@
 				</div>
 			</div>
 		</div>
-
 	</ion-content>
-</ion-view> 
+	<div class="bigImg" ng-if="showExit">
+	    <div class="exitBox">
+	    	<p>您确定离开吗?</p>
+	    	<div class="btnBox">
+	    		<button class="button button-stable" ng-click="cancelExit()">取消</button>
+	    		<button class="button button-balanced" ng-click="doExit()">确定</button>
+	    	</div>    	
+	    </div>
+	</div>
+</ion-view>
